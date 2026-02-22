@@ -55,7 +55,9 @@ Colab/DATATHON/**/*.xlsx
 
 # Outputs
 output/
-models/
+# Permitir modelo específico
+models/*
+!models/modelo_risco_defasagem.pkl
 *.png
 *.html
 *.pdf
