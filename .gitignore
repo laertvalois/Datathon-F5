@@ -47,6 +47,12 @@ data/*.parquet
 *.joblib
 *.h5
 
+# Arquivos muito grandes (ZIPs e CSVs grandes)
+*.zip
+Colab/DATATHON/**/*.csv
+Colab/DATATHON/**/*.xlsx
+!Colab/DATATHON/BASE DE DADOS PEDE 2024 - DATATHON.xlsx
+
 # Outputs
 output/
 models/
