@@ -284,7 +284,6 @@ def load_model():
     try:
         with open(model_path, 'rb') as f:
             model = pickle.load(f)
-        st.success(f"Modelo carregado com sucesso de: {model_path}")
         return model
     except FileNotFoundError:
         st.error(f"Arquivo do modelo não encontrado: {model_path}")
