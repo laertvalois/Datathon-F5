@@ -266,12 +266,37 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     """Carrega o modelo treinado."""
-    model_path = Path('models/modelo_risco_defasagem.pkl')
+    # Usa caminho absoluto baseado no diretório do app.py
+    base_dir = Path(__file__).parent
+    model_path = base_dir / 'models' / 'modelo_risco_defasagem.pkl'
+    
+    # Tenta caminho alternativo se não encontrar
     if not model_path.exists():
+        # Tenta caminho relativo também
+        alt_path = Path('models/modelo_risco_defasagem.pkl')
+        if alt_path.exists():
+            model_path = alt_path
+        else:
+            st.error(f"Modelo não encontrado. Procurou em: {model_path} e {alt_path}")
+            st.info("Verifique se o arquivo 'models/modelo_risco_defasagem.pkl' está no repositório.")
+            return None
+    
+    try:
+        with open(model_path, 'rb') as f:
+            model = pickle.load(f)
+        st.success(f"Modelo carregado com sucesso de: {model_path}")
+        return model
+    except FileNotFoundError:
+        st.error(f"Arquivo do modelo não encontrado: {model_path}")
         return None
-    with open(model_path, 'rb') as f:
-        model = pickle.load(f)
-    return model
+    except pickle.UnpicklingError as e:
+        st.error(f"Erro ao deserializar modelo (arquivo pode estar corrompido): {e}")
+        return None
+    except Exception as e:
+        st.error(f"Erro ao carregar modelo: {type(e).__name__}: {e}")
+        import traceback
+        st.code(traceback.format_exc())
+        return None
 
 
 @st.cache_data
