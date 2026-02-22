@@ -65,9 +65,9 @@
     - Classification Report
 
 ### 4. ✅ Aplicação Streamlit com Deploy
-**Status:** COMPLETO (aguardando deploy)
+**Status:** COMPLETO
 
-- **Localização:** `app.py`
+- **Localização:** `https://datathon-f5-grupo-49.streamlit.app/`
 - **Funcionalidades implementadas:**
   - ✅ **Página Início:** Objetivo, Predição, Insights, Informações técnicas, Recursos, Como usar
   - ✅ **Predição Individual de Risco:** Formulário completo para predição de risco por aluno
@@ -132,8 +132,7 @@ Datathon_F5/
 │   └── MODELO_PREDITIVO_DATATHON.ipynb  # Notebook de entrega
 ├── database/                        # Scripts de migração
 │   ├── schema.sql                  # Schema do banco
-│   ├── migrate_excel_to_db.py     # Migração Excel → SQLite
-│   └── README.md                   # Documentação do banco
+│   └── migrate_excel_to_db.py     # Migração Excel → SQLite
 ├── src/                            # Código fonte principal
 │   ├── analise_exploratoria.py    # Análise exploratória
 │   └── modelagem.py                # Modelagem preditiva
@@ -146,7 +145,6 @@ Datathon_F5/
 │   ├── run_modelagem.py
 │   └── run_completo.py
 ├── README.md                       # Documentação principal
-├── DEPLOY.md                       # Guia de deploy
 └── DOCUMENTO_ENTREGA_FINAL.md     # Este documento
 ```
 
@@ -214,8 +212,8 @@ A aplicação abrirá automaticamente no navegador em `http://localhost:8501`
 - **Acurácia:** 92.4% ✅
 - **ROC-AUC:** 95.7% ✅
 - **F1-Score:** 92%
-- **Precision:** (verificar no notebook)
-- **Recall:** (verificar no notebook)
+- **Precision:** 76.8% (para classe "Em risco")
+- **Recall:** 84.6% (para classe "Em risco")
 
 ### Validação
 - Divisão treino/teste: 80/20
@@ -384,7 +382,7 @@ A aplicação abrirá automaticamente no navegador em `http://localhost:8501`
 - [ ] Apresentação do storytelling (PPT ou PDF) - **PENDENTE**
 - [x] Notebook Python com modelo preditivo completo
 - [x] Aplicação Streamlit funcional
-- [ ] Deploy no Streamlit Community Cloud - **AGUARDANDO**
+- [x] Deploy no Streamlit Community Cloud
 - [ ] Vídeo de apresentação (até 5 minutos) - **PENDENTE**
 
 ---

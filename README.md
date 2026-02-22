@@ -33,8 +33,7 @@ Datathon_F5/
 │
 ├── database/                        # Banco de dados SQLite
 │   ├── schema.sql                  # Schema do banco
-│   ├── migrate_csv_to_db.py        # Script de migração
-│   └── README.md                   # Documentação do banco
+│   └── migrate_excel_to_db.py      # Script de migração Excel → SQLite
 │
 ├── utils/                          # Módulos utilitários
 │   ├── __init__.py
@@ -61,8 +60,7 @@ Datathon_F5/
 ├── app.py                         # Aplicação Streamlit
 ├── .streamlit/                    # Configurações Streamlit
 │   └── config.toml
-├── RELATORIO_ANALISE_COMPLETO.md   # Relatório de análise
-├── DEPLOY.md                       # Guia de deploy
+├── DOCUMENTO_ENTREGA_FINAL.md     # Documento de entrega do Datathon
 ├── requirements.txt                 # Dependências
 ├── .gitignore                      # Arquivos ignorados pelo Git
 └── README.md                       # Este arquivo
@@ -81,7 +79,7 @@ pip install -r requirements.txt
 ### 2. Migrar Dados para SQLite
 
 ```bash
-python database/migrate_csv_to_db.py
+python database/migrate_excel_to_db.py
 ```
 
 Isso irá:
@@ -218,10 +216,7 @@ Funções padronizadas de pré-processamento:
 
 ## 📝 Documentação
 
-- **[Relatório de Análise](RELATORIO_ANALISE_COMPLETO.md)**: Análise completa do trabalho realizado
-- **[Plano de Migração](PLANO_MIGRACAO.md)**: Detalhes da migração para SQLite
-- **[Exemplo de Atualização](EXEMPLO_ATUALIZACAO_NOTEBOOKS.md)**: Como atualizar notebooks
-- **[Database README](database/README.md)**: Documentação do banco de dados
+- **[Documento de Entrega Final](DOCUMENTO_ENTREGA_FINAL.md)**: Documento completo de entrega do Datathon
 
 ---
 
@@ -247,7 +242,12 @@ A aplicação estará disponível em: `http://localhost:8501`
 
 A aplicação está pronta para deploy no Streamlit Community Cloud.
 
-📖 **Guia completo de deploy:** [`DEPLOY.md`](DEPLOY.md)
+Para fazer o deploy:
+1. Acesse https://share.streamlit.io/
+2. Conecte seu repositório GitHub
+3. Selecione o branch `main`
+4. Defina o arquivo principal como `app.py`
+5. Clique em "Deploy"
 
 ---
 
