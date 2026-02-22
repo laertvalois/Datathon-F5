@@ -36,6 +36,7 @@ env/
 # Jupyter Notebooks
 .ipynb_checkpoints/
 *.ipynb
+!notebooks/MODELO_PREDITIVO_DATATHON.ipynb
 
 # Data files (grandes)
 # Permitir banco de dados e modelo para deploy
