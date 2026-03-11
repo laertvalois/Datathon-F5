@@ -80,3 +80,6 @@ desktop.ini
 *.tmp
 *.temp
 *.bak
+
+# Arquivo de papel/instrução - não necessário para entrega
+*Seu Papel*.txt
