@@ -53,6 +53,9 @@ Datathon_F5/
 ├── notebooks/                      # Notebook de entrega
 │   └── MODELO_PREDITIVO_DATATHON.ipynb
 │
+├── docs/                           # Documentos servidos pela app
+│   └── storytelling_fase5.pdf      # Storytelling Fase 5 (visualização/download no Streamlit)
+│
 ├── Colab/                         # Notebooks originais (referência)
 │   ├── TC5_Análise_Exploratória_v2.ipynb
 │   └── TC5_Modelo preditivo.ipynb
@@ -233,6 +236,7 @@ A aplicação estará disponível em: `http://localhost:8501`
 ### Funcionalidades
 
 - ✅ **Página Início**: Visão geral do projeto e objetivos
+- ✅ **Storytelling (PDF)**: na aba **Recursos**, visualização embutida e download de `storytelling_fase5.pdf`
 - ✅ **Predição Individual**: Predição de risco para um aluno específico
 - ✅ **Modelo Preditivo**: Visualizações do modelo (ROC, Confusão, Importância)
 - ✅ **Indicadores**: Análises detalhadas dos 8 indicadores PEDE

@@ -62,6 +62,7 @@ models/*
 *.png
 *.html
 *.pdf
+!docs/storytelling_fase5.pdf
 
 # Logs
 *.log

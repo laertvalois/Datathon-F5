@@ -517,6 +517,40 @@ def main():
         show_sobre_sistema()
 
 
+def _path_storytelling_pdf() -> Path:
+    """Caminho do PDF de storytelling (Fase 5) na pasta docs/."""
+    return Path(__file__).resolve().parent / "docs" / "storytelling_fase5.pdf"
+
+
+def render_storytelling_pdf_section():
+    """Visualização embutida (st.pdf) e download do storytelling Fase 5."""
+    pdf_path = _path_storytelling_pdf()
+    if not pdf_path.exists():
+        st.info(
+            "O arquivo **storytelling_fase5.pdf** não foi encontrado em `docs/`. "
+            "Inclua o PDF nessa pasta para habilitar visualização e download."
+        )
+        return
+
+    st.markdown("### 📽️ Storytelling (Fase 5)")
+    st.markdown(
+        "Apresentação em PDF com a narrativa do projeto no Datathon. "
+        "Visualize abaixo ou **baixe** o arquivo para abrir no seu leitor preferido."
+    )
+    pdf_bytes = pdf_path.read_bytes()
+    try:
+        st.pdf(pdf_bytes, height=720)
+    except Exception as e:
+        st.warning(f"Visualização embutida indisponível neste ambiente: {e}. Use o botão de download.")
+    st.download_button(
+        label="📥 Baixar storytelling_fase5.pdf",
+        data=pdf_bytes,
+        file_name="storytelling_fase5.pdf",
+        mime="application/pdf",
+        key="download_storytelling_fase5",
+    )
+
+
 def show_inicio_completo(df):
     """Página Início completa com todas as seções."""
     
@@ -779,7 +813,10 @@ def show_inicio_completo(df):
     
     with tab5:
         st.markdown("## 📚 Recursos")
-        
+
+        render_storytelling_pdf_section()
+        st.markdown("---")
+
         st.markdown("""
         ### Funcionalidades Disponíveis
         
@@ -1249,6 +1286,8 @@ def show_sobre_sistema():
     ```
     Datathon_F5/
     ├── app.py                    # Aplicação Streamlit
+    ├── docs/                     # Storytelling e documentos para a app
+    │   └── storytelling_fase5.pdf
     ├── src/                      # Código fonte
     │   ├── analise_exploratoria.py
     │   └── modelagem.py
@@ -1263,6 +1302,10 @@ def show_sobre_sistema():
     └── notebooks/                # Notebooks de análise
         └── MODELO_PREDITIVO_DATATHON.ipynb
     ```
+    
+    ### Storytelling (apresentação)
+    
+    O PDF **Storytelling – Fase 5** está disponível em **Início → aba Recursos**: visualização na página e botão para download.
     
     ### Limitações e Considerações
     

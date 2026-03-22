@@ -26,12 +26,16 @@
     - `run_completo.py` - Pipeline completo
 
 ### 2. ✅ Apresentação do Storytelling
-**Status:** PENDENTE (a ser criado pelo grupo)
+**Status:** COMPLETO
 
-- **Formato:** PPT ou PDF
-- **Conteúdo recomendado:**
-  - Introdução: Contexto da Passos Mágicos e desafio
-  - Análise exploratória: Respostas às 11 perguntas do Datathon
+- **Formato:** PDF
+- **Conteúdo:**
+  - Objetivo do Sistema
+  - Metodologia
+  - Impacto esperado
+  - Sistema de Predição de Risco
+  - Adequação de nível e desempenho acadêmico ao longo do tempo
+  Análise exploratória: Respostas às 11 perguntas do Datathon
   - Modelo preditivo: Metodologia e resultados
   - Insights e recomendações: Ações práticas para a organização
   - Conclusão: Impacto esperado
@@ -379,7 +383,7 @@ A aplicação abrirá automaticamente no navegador em `http://localhost:8501`
 ## ✅ Checklist Final de Entrega
 
 - [x] Link do GitHub com códigos de limpeza e análise
-- [ ] Apresentação do storytelling (PPT ou PDF) - **PENDENTE**
+- [x] Apresentação do storytelling (PDF `docs/storytelling_fase5.pdf` no repositório; visualização e download na app: **Início → Recursos**)
 - [x] Notebook Python com modelo preditivo completo
 - [x] Aplicação Streamlit funcional
 - [x] Deploy no Streamlit Community Cloud
@@ -421,6 +425,5 @@ Este projeto foi desenvolvido para fins educacionais como parte do **Datathon - 
 
 **Próximos passos:**
 1. Fazer deploy no Streamlit Community Cloud
-2. Criar apresentação do storytelling (PPT/PDF)
-3. Gravar vídeo de apresentação (até 5 minutos)
-4. Preencher links no documento após conclusão
+2. Gravar vídeo de apresentação (até 5 minutos)
+3. Preencher links no documento após conclusão
