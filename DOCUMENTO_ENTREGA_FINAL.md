@@ -29,16 +29,16 @@
 **Status:** COMPLETO
 
 - **Formato:** PDF
+- **Como acessar:** na aba **Recursos**, visualização embutida e download de `storytelling_fase5.pdf`
 - **Conteúdo:**
   - Objetivo do Sistema
   - Metodologia
   - Impacto esperado
   - Sistema de Predição de Risco
   - Adequação de nível e desempenho acadêmico ao longo do tempo
-  Análise exploratória: Respostas às 11 perguntas do Datathon
-  - Modelo preditivo: Metodologia e resultados
-  - Insights e recomendações: Ações práticas para a organização
-  - Conclusão: Impacto esperado
+  - A influência do engajamento e da autovaliação no desempenho
+  - O papel dos fatores psicossociais e psicopedagógicos
+  - Previsão de risco e identificação do ponto de virada  
 
 ### 3. ✅ Notebook Python com Modelo Preditivo
 **Status:** COMPLETO
@@ -51,7 +51,7 @@
     - Padronização de variáveis numéricas
     - Encoding de variáveis categóricas
   - ✅ **Separação dos dados em treino e teste:**
-    - Divisão 80/20 (treino/teste)
+    - Divisão 75/25 (treino/teste), alinhada ao código em `src/modelagem.py`
     - Estratificação por variável alvo
     - Random state fixo para reprodutibilidade
   - ✅ **Modelagem preditiva:**
@@ -90,19 +90,12 @@
     - IPV - Índice de Ponto de Virada
     - INDE - Índice Global (Multidimensional)
   - ✅ **Sobre o Sistema:** Informações técnicas, autores e licença
-- **Deploy:** Streamlit Community Cloud (link a ser preenchido após deploy)
+- **Deploy:** Streamlit Community Cloud — URL na seção de links abaixo
 
 ### 5. ✅ Vídeo de Apresentação
-**Status:** PENDENTE (a ser gravado pelo grupo)
+**Status:** COMPLETO
 
-- **Duração:** Até 5 minutos
-- **Conteúdo recomendado:**
-  1. **Introdução (1min):** Contexto da Passos Mágicos e desafio do Datathon
-  2. **Storytelling (2min):** Principais insights das 11 perguntas respondidas
-  3. **Modelo Preditivo (1.5min):** Metodologia, resultados e métricas
-  4. **Demo da Aplicação (0.5min):** Demonstração rápida do Streamlit
-  5. **Conclusão (0.5min):** Impacto esperado e próximos passos
-- **Link:** (a ser preenchido após gravação)
+- **Link:** https://www.youtube.com/watch?v=GlUnb1qd0EY
 
 ---
 
@@ -220,7 +213,7 @@ A aplicação abrirá automaticamente no navegador em `http://localhost:8501`
 - **Recall:** 84.6% (para classe "Em risco")
 
 ### Validação
-- Divisão treino/teste: 80/20
+- Divisão treino/teste: 75/25
 - Estratificação por classe mantida
 - Random state fixo para reprodutibilidade
 
@@ -387,7 +380,7 @@ A aplicação abrirá automaticamente no navegador em `http://localhost:8501`
 - [x] Notebook Python com modelo preditivo completo
 - [x] Aplicação Streamlit funcional
 - [x] Deploy no Streamlit Community Cloud
-- [ ] Vídeo de apresentação (até 5 minutos) - **PENDENTE**
+- [x] Vídeo de apresentação (até 5 minutos)
 
 ---
 
@@ -421,9 +414,4 @@ Este projeto foi desenvolvido para fins educacionais como parte do **Datathon - 
 
 **Status do Projeto:** ✅ **COMPLETO E PRONTO PARA ENTREGA**
 
-**Última atualização:** Janeiro 2025
-
-**Próximos passos:**
-1. Fazer deploy no Streamlit Community Cloud
-2. Gravar vídeo de apresentação (até 5 minutos)
-3. Preencher links no documento após conclusão
+**Última atualização:** Março 2026

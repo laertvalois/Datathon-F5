@@ -219,19 +219,14 @@ Funções padronizadas de pré-processamento:
 
 ## 📝 Documentação
 
-- **[Documento de Entrega Final](DOCUMENTO_ENTREGA_FINAL.md)**: Documento completo de entrega do Datathon
+- **[Documento de Entrega da Atividade](DOCUMENTO_ENTREGA_ATIVIDADE.md)**: versão formal e resumida para submissão (links, entregáveis, equipe)
+- **[Documento de Entrega Final](DOCUMENTO_ENTREGA_FINAL.md)**: referência técnica detalhada (perguntas do Datathon, métricas, funcionalidades)
 
 ---
 
 ## 🌐 Aplicação Streamlit
 
-### Executar Localmente
-
-```bash
-streamlit run app.py
-```
-
-A aplicação estará disponível em: `http://localhost:8501`
+A aplicação estará disponível em: `https://datathon-f5-grupo-49.streamlit.app/`
 
 ### Funcionalidades
 
@@ -260,7 +255,9 @@ Para fazer o deploy:
 1. ✅ Migração para SQLite (concluído)
 2. ✅ Código consolidado em módulos Python (concluído)
 3. ✅ Aplicação Streamlit desenvolvida (concluído)
-4. ⏳ Deploy no Streamlit Community Cloud (pronto para deploy)
+4. ⏳ Deploy no Streamlit Community Cloud (concluído)
+5. ✅ Storytelling (concluído)
+6. ✅ Vídeo de apresentação (concluído)
 
 ---
 
